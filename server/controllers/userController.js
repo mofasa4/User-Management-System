@@ -169,7 +169,7 @@ exports.show = (req, res) => {
     console.log("connected as id: " + connection.threadId);
 
     connection.query(
-      "SELECT FROM user WHERE id = ? ",
+      "SELECT * FROM user WHERE id = ? ",
       [req.params.id],
       (err, rows) => {
         connection.release();

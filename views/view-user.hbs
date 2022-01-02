@@ -1,1 +1,33 @@
-<h5>hhgyjgjy</h5>
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Home</a></li>
+  <li class="breadcrumb-item active" aria-current="page">View</li>
+</ol>
+
+{{#each rows}}
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="card col-8">
+      <div class="card-header">
+        User Data
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">First Name:
+          {{this.first_name}}
+          <i class="bi bi-person float-end"></i></li>
+        <li class="list-group-item">Last Name:
+          {{this.last_name}}
+          <i class="bi bi-person-fill float-end"></i></li>
+        <li class="list-group-item">Email:
+          {{this.email}}
+          <i class="bi bi-envelope float-end"></i></li>
+        <li class="list-group-item">Phone:
+          {{this.phone}}
+          <i class="bi bi-telephone-fill float-end"></i></li>
+        <li class="list-group-item">Comments:
+          {{this.comments}}
+          <i class="bi bi-chat-left float-end"></i></li>
+      </ul>
+    </div>
+    <div class="col-2"></div>
+  </div>
+{{/each}}
